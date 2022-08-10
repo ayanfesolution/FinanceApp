@@ -32,6 +32,9 @@
 		04AC988B28A42A4F0004BB9A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC988A28A42A4F0004BB9A /* Constant.swift */; };
 		04AC988C28A42A4F0004BB9A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC988A28A42A4F0004BB9A /* Constant.swift */; };
 		04AC988D28A42A4F0004BB9A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC988A28A42A4F0004BB9A /* Constant.swift */; };
+		04AC989128A468F90004BB9A /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC989028A468F90004BB9A /* WelcomePageViewController.swift */; };
+		04AC989228A468F90004BB9A /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC989028A468F90004BB9A /* WelcomePageViewController.swift */; };
+		04AC989328A468F90004BB9A /* WelcomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AC989028A468F90004BB9A /* WelcomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,7 @@
 		04AC988128A424BD0004BB9A /* ScreenTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTwoViewController.swift; sourceTree = "<group>"; };
 		04AC988528A4254A0004BB9A /* ScreenThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenThreeViewController.swift; sourceTree = "<group>"; };
 		04AC988A28A42A4F0004BB9A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		04AC989028A468F90004BB9A /* WelcomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,8 @@
 		04AC987028A408780004BB9A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				04AC988F28A468550004BB9A /* Registration */,
+				04AC988E28A467DF0004BB9A /* Login */,
 				04AC984028A407F10004BB9A /* ViewController.swift */,
 				04AC987B28A410820004BB9A /* OnboardingScreen */,
 			);
@@ -209,6 +215,21 @@
 				04AC988A28A42A4F0004BB9A /* Constant.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		04AC988E28A467DF0004BB9A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				04AC989028A468F90004BB9A /* WelcomePageViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		04AC988F28A468550004BB9A /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Registration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,6 +367,7 @@
 				04AC988628A4254A0004BB9A /* ScreenThreeViewController.swift in Sources */,
 				04AC988B28A42A4F0004BB9A /* Constant.swift in Sources */,
 				04AC984128A407F10004BB9A /* ViewController.swift in Sources */,
+				04AC989128A468F90004BB9A /* WelcomePageViewController.swift in Sources */,
 				04AC988228A424BD0004BB9A /* ScreenTwoViewController.swift in Sources */,
 				04AC983D28A407F10004BB9A /* AppDelegate.swift in Sources */,
 				04AC983F28A407F10004BB9A /* SceneDelegate.swift in Sources */,
@@ -359,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AC985728A407F50004BB9A /* FinanceAppTests.swift in Sources */,
+				04AC989228A468F90004BB9A /* WelcomePageViewController.swift in Sources */,
 				04AC988328A424BD0004BB9A /* ScreenTwoViewController.swift in Sources */,
 				04AC987928A40D840004BB9A /* OnboardingScreenViewController.swift in Sources */,
 				04AC987F28A410E10004BB9A /* ScreenOneViewController.swift in Sources */,
@@ -373,6 +396,7 @@
 			files = (
 				04AC988D28A42A4F0004BB9A /* Constant.swift in Sources */,
 				04AC987A28A40D840004BB9A /* OnboardingScreenViewController.swift in Sources */,
+				04AC989328A468F90004BB9A /* WelcomePageViewController.swift in Sources */,
 				04AC988828A4254A0004BB9A /* ScreenThreeViewController.swift in Sources */,
 				04AC988428A424BD0004BB9A /* ScreenTwoViewController.swift in Sources */,
 				04AC988028A410E10004BB9A /* ScreenOneViewController.swift in Sources */,

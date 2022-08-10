@@ -12,6 +12,7 @@ class ScreenOneViewController: UIViewController {
     lazy var headerText : UILabel = {
         let header = UILabel()
         header.text = "What's New"
+        header.textColor = .white
         header.translatesAutoresizingMaskIntoConstraints = false
         return  header
     }()
@@ -23,20 +24,28 @@ class ScreenOneViewController: UIViewController {
         skip.translatesAutoresizingMaskIntoConstraints = false
         return skip
     }()
+    
+    lazy var descriptionText : UILabel = {
+        let description = UILabel()
+        description.text = "Track your money everywhere."
+        description.font = UIFont.systemFont(ofSize: 34, weight: .bold)
+        description.numberOfLines = 0
+        description.textColor = .white
+        description.translatesAutoresizingMaskIntoConstraints = false
+        return description
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         view.backgroundColor = UIColor(named: "primaryBackgroundColor")
-
-        // Do any additional setup after loading the view.
     }
 }
 
 extension ScreenOneViewController {
     
     func setupViews() {
-        let items = [headerText, skipButton]
+        let items = [headerText, skipButton, descriptionText]
         
         items.forEach { item in
             view.addSubview(item)
@@ -47,7 +56,11 @@ extension ScreenOneViewController {
             headerText.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             
             skipButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-            skipButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 5)
+            skipButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 5),
+            
+            descriptionText.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -176),
+            descriptionText.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            descriptionText.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16)
         ])
     }
 }
